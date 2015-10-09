@@ -1,23 +1,33 @@
 .navbar-header { float:left; width:100%; }
+.scrollimg { text-align:center; width:100px; }
+	.scrollToTop{
+	position:fixed;
+	display:none;
+}
+
+.header1 { text-align:center; margin:auto; padding:10px 0; width:65%; background:#fff; float:left; z-index:100;}
 
 .header { float:left; width:100%; margin:auto; }
 .home-logo { padding:100px 0 0 0; width:100%; margin:auto; }
 .inner-logo { margin:35px 0 0 0; width:100%; }
-.menu-on { float:left; text-align:center; padding:6% 0 0 5%; }
+.menu-on { float:left; text-align:center; padding:30px 0 0 35px; position:fixed; }
 .btn-menu-on { background:url(../images/menu_on.svg) no-repeat top center; width:47px; height:62px; border:none; outline:none; }
 .menu-off { padding:20px 0 50px 0; width:100%; text-align:center; }
 
-.login-nav { float:right; padding:6% 5% 0 0; }
+.login-nav { float:right; padding:35px 0 0 0; position:fixed; }
 .btn-login { padding:5px 15px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; text-decoration:none; background:none; border:none; color:#11a3cc; outline:none; }
 .btn-apply { padding:5px 15px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; border:1px solid #009dc8; box-shadow:3px 3px 3px 0px #ccc; background:#fff; color:#11a3cc; width:120px; outline:none; }
 
-.footer {
-    position: relative;
-    clear:both; text-align:center; bottom:0px; height:250px;
-}
+
+.homeimg { width:100%; float:left; text-align:center; background:url(../images/illustration.svg) no-repeat top center; height:426px;  }
 .footer-img { bottom:0px; }
 .btn-abt-nav { margin:20px 0 50px 0; }
 .btn-abt { padding:7px 0px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; border:1px solid #009dc8; box-shadow:3px 3px 3px 0px #ccc; background:#00a6d3; color:#fff; width:180px; outline:none; }
+
+.btn-contact { padding:7px 0px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; border:1px solid #009dc8; background:#00a6d3; color:#fff; width:180px; outline:none; }
+
+.textarea { border:1px solid #999999 !important; width:100%; resize:none; height:200px !important; outline:none; margin:40px 0 40px 0; }
+.txtlabel { padding:0 10px; }
 
 
 .home-desc { text-align:center; padding:0px 0 20px 0; }
@@ -48,3 +58,28 @@
 .panel-group .panel-heading+.panel-collapse .panel-body { border:0px solid #fff !important; }
 .panel-body { padding:5px 0px !important; }
 .panel-group .panel+.panel { margin:0px !important; }
+
+/* Home Style Start */
+.homenav { float:left; width:100%; margin:0px 0 0 0; padding:40px 0;}
+/* Home Style end */
+
+/* About Style Start */
+.abtnav { float:left; width:100%; margin:0px 0 0 0; padding:40px 0; }
+/* About Style End */
+
+/* Offer Style Start */
+.offernav { float:left; width:100%; margin:0px 0 0 0; padding:40px 0; }
+/* Offer Style End */
+
+/* Use Cases Style Start */
+.ucasesnav { float:left; width:100%; margin:0px 0 0 0; padding:40px 0; }
+/* Use Cases Style End */
+
+/* FAQ Style Start */
+.faqnav { float:left; width:100%; margin:0px 0 0 0; padding:40px 0; }
+/* FAQ Style End */
+
+/* Contact Style Start */
+.contactnav { float:left; width:100%; margin:0px 0 0 0; padding:30px 0 800px 0; }
+.float-label { font-family:'Lato', sans-serif; font-size:12px !important; font-weight:700; color:#313131; letter-spacing:1px; text-transform:uppercase; }
+/* Contact Style End */
