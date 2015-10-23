@@ -14,14 +14,13 @@
 .btn-menu-on { background:url(../images/menu_on.svg) no-repeat top center; width:47px; height:62px; border:none; outline:none; }
 .menu-off { padding:20px 0 50px 0; width:100%; text-align:center; }
 
-.login-nav { float:right; padding:35px 0 0 0; position:fixed; }
+.login-nav { float:right; padding:35px 30px 0 0; position:fixed; }
 .btn-login { padding:5px 15px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; text-decoration:none; background:none; border:none; color:#11a3cc; outline:none; }
 .btn-apply { padding:5px 15px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; border:1px solid #009dc8; box-shadow:3px 3px 3px 0px #ccc; background:#fff; color:#11a3cc; width:120px; outline:none; }
 
-
 .homeimg { width:100%; float:left; text-align:center; background:url(../images/illustration.svg) no-repeat top center; height:426px;  }
 .footer-img { bottom:0px; }
-.btn-abt-nav { margin:20px 0 50px 0; }
+.btn-abt-nav { margin:5px 0 50px 0; }
 .btn-abt { padding:7px 0px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; border:1px solid #009dc8; box-shadow:3px 3px 3px 0px #ccc; background:#00a6d3; color:#fff; width:180px; outline:none; }
 
 .btn-contact { padding:7px 0px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; border:1px solid #009dc8; background:#00a6d3; color:#fff; width:180px; outline:none; }
@@ -29,16 +28,15 @@
 .textarea { border:1px solid #999999 !important; width:100%; resize:none; height:200px !important; outline:none; margin:40px 0 40px 0; }
 .txtlabel { padding:0 10px; }
 
-
 .home-desc { text-align:center; padding:0px 0 20px 0; }
-.home-txt1 { margin:20px 0 0 0; line-height:1.1em; font-family: 'Delius', cursive; font-size:20px; font-weight:700; }
+.home-txt1 { margin:0 0 0 0; line-height:1.1em; font-family: 'Fauna One', serif; font-size:25px; font-weight:500; color:#313131; }
 .home-txt2 { margin:20px 0 0 0; line-height:1.2em; font-family:'Lato', sans-serif; font-size:16px; font-weight:300; }
 
 .inner-body {  float:left; width:100%; margin:0px 0 40px 0; }
 .inner-hd { font-family:'Lato', sans-serif; font-size:12px; color:#009dc8; letter-spacing:1px; font-weight:800; float:left; text-transform:uppercase; }
 .inner-hd2 { font-family:'Lato', sans-serif; font-size:12px; font-weight:800; float:right;  text-transform:uppercase; color:#009dc8; letter-spacing:1px;  }
-.hd-nav { width:100%; float:left; padding:0 0 25px 0; }
-.shd { margin:20px 0 20px 0; line-height:1.1em; font-family: 'Delius', cursive; font-size:20px; font-weight:700; width:100%; float:left; }
+.hd-nav { width:100%; float:left; padding:0 0 50px 0; }
+.shd { margin:20px 0 20px 0; line-height:1.1em; font-family: 'Fauna One', serif; font-size:20px; font-weight:700; width:100%; float:left; }
 .inner-desc { margin:20px 0 25px 0; line-height:1.3em; font-family:'Lato', sans-serif; font-size:18px; font-weight:300; color:#313131; }
 .link-off { padding:0 5px;  border-bottom:2px solid #009dc8; } .inner-hd2 a:link { text-decoration:none; }
 
@@ -60,7 +58,7 @@
 .panel-group .panel+.panel { margin:0px !important; }
 
 /* Home Style Start */
-.homenav { float:left; width:100%; margin:0px 0 0 0; padding:40px 0;}
+.homenav { float:left; width:100%; margin:0px 0 0 0; padding:25px 0;}
 /* Home Style end */
 
 /* About Style Start */
@@ -68,15 +66,38 @@
 /* About Style End */
 
 /* Offer Style Start */
-.offernav { float:left; width:100%; margin:0px 0 0 0; padding:40px 0; }
+.offernav { float:left; width:100%; margin:0px 0 0 0; padding:65px 0 40px 0; }
 /* Offer Style End */
 
 /* Use Cases Style Start */
-.ucasesnav { float:left; width:100%; margin:0px 0 0 0; padding:40px 0; }
+.ucasesnav { float:left; width:100%; margin:0px 0 0 0; padding:75px 0 40px 0; }
 /* Use Cases Style End */
 
 /* FAQ Style Start */
-.faqnav { float:left; width:100%; margin:0px 0 0 0; padding:40px 0; }
+.faqnav { float:left; width:100%; margin:0px 0 0 0; padding:75px 0 40px 0; }
+
+ul, li { list-style:none; padding:0px; }
+.faq li { padding:0px; }
+
+.faq li.q {
+  cursor: pointer;
+  padding:13px 0px;
+  font-family:'Lato', sans-serif; font-size:14px; font-weight:800; color:#202020; line-height:1.4em; margin:0 0 0 0; text-transform:uppercase;
+}
+
+.faq li.q .active { color:#00A6D3 !important; }
+
+.faq li.a {
+ padding:5px 0px 30px 0px;
+ font-family:'Lato', sans-serif; font-size:17px; font-weight:300; color:#313131; line-height:1.4em; margin:0 0 0 0;
+ display: none;
+}
+
+.rotate {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
 /* FAQ Style End */
 
 /* Contact Style Start */

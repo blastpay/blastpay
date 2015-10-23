@@ -10,7 +10,7 @@
 
 <!--Google Fonts-->
 <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css' />
-<link href='https://fonts.googleapis.com/css?family=Delius' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Fauna+One&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 
 <!--Main CSS-->
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen" />
@@ -19,13 +19,10 @@
 <link rel="stylesheet" href="css/style.min.css" />
 
 <script src="js/jquery.min.js"></script>
+
 <script>
 	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-		  
-		if(this.id=="wherecani") { }
-		if(this.id=="doineed") { }
-		
+	  $('a[href*=#]:not([href=#])').click(function() {	
 		
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      var target = $(this.hash);
@@ -33,16 +30,14 @@
 	      if (target.length) {
 	        $('html,body').animate({
 	          scrollTop: target.offset().top
-	        }, 400);
+	        }, 500);
 	        return false;
-	      }
-		
+	      }		
 	    }
 	  });
 	});
 </script>
-
-    
+ 
 <script>
 $(document).ready(function(){
 	
@@ -69,33 +64,34 @@ $(document).ready(function(){
 
 <div class="container-fluid">
 	
-    <div class="row">
-    	<!-- LEFT SIDE PANEL -->     
-    	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="o-wrapper">        
-    			<div class="menu-on">
-                  <button id="c-button--slide-left" class="btn-menu-on"></button>
-                </div>             
-        </div>
-    	<!-- LEFT SIDE PANEL -->     
+    	<div class="row">
+    
+            <!-- LEFT SIDE PANEL -->     
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="o-wrapper">        
+                    <div class="menu-on">
+                      <button id="c-button--slide-left" class="btn-menu-on"></button>
+                    </div>             
+            </div>
+            <!-- LEFT SIDE PANEL -->     
         
-    	<!-- RIGHT SIDE PANEL -->                     
+    		<!-- RIGHT SIDE PANEL -->                     
                 
-    	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="home">
-        
-        <div class="scrollToTop hidden-xs header1">
-        	<img src="images/BLASTPAY_logo.svg" class="scrollimg" />
-        </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="home">
+            
+            <div class="scrollToTop hidden-xs header1">
+                <img src="images/BLASTPAY_logo.svg" class="scrollimg" />
+            </div>
 
         
          
            <!-- HEADER NAV START -->     
             <nav class="navbar">        
             <div class="navbar-header">                    
-
-                        <div class="text-center home-logo">
-                            <img src="images/BLASTPAY_logo.svg" />
-                        </div>                        
-
+    
+                <div class="text-center home-logo">
+                    <img src="images/BLASTPAY_logo.svg" />
+                </div>                        
+    
             </div>
             </nav>
           <!-- HEADER NAV END --> 
@@ -124,7 +120,7 @@ $(document).ready(function(){
             
                     <div class="hd-nav">
                         <div class="inner-hd">innotive. fast. steady. reliable</div>
-                        <div class="inner-hd2"><a href="offer.html" class="link-off">see what we offer</a></div>
+                        <div class="inner-hd2"><a href="#offer" class="link-off">see what we offer</a></div>
                     </div>
                 
                     <div class="shd">Problem you can solve</div>
@@ -289,9 +285,7 @@ and we will explain this here to you.
                     
                 </div>
             </div>
-            <!-- Row Start -->                       
-            
-    
+            <!-- Row Start -->                                       
     </div>
 </div>
         
@@ -300,225 +294,52 @@ and we will explain this here to you.
         
         
         <!-- FAQ NAV START --> 
-		<div class="faqnav" id="faq">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">                        
+		<div class="faqnav" id="faq">        
 
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">                        
 
-<!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="wherecani">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Where can I get One Card MasterCard?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="wherecani">
-      <div class="panel-body">
-        Signing up is easy.  Vistit <a href="www.onecard.cool" target="_new">www.onecard.cool</a> and click on the sign-up option.
-      </div>
-    </div>
-  </div>
-  <!-- Panel End -->
-  
-  <!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="doineed">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Do I need to activate my card before using it?
-        </a>
-      </h4>
-    </div>
-    <div id="doineed" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-    
-  </div>
-  <!-- Panel End -->
-  
-  <!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          How do I use my One Card MasterCard?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End -->
-  
-  <!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingFour">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Where can I use my One Card MasterCard Card?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End -->  
-  
-  <!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingFive">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          how can i send money?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End --> 
-   
-   
-  <!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingSix">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          how much does it cost to send money?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End -->
-   
-  <!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingSeven">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-          how do i deposit money to my card?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End -->    
-   
-       
-  <!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingEight">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-         how long does it take for my contact to receive the money?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End --> 
-   
-<!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingNine">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-         my available card balance will not cover my purchase amount. can i still use my onecard?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End -->   
-    
-<!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTen">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-         what happens if i need to return an item i purchased using my onecard mastercard?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End -->  
- 
- <!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingEleven">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-         i can't find my onecard mastercard card. what should i do?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End -->
-  
-<!-- Panel Start -->
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwele">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwele" aria-expanded="false" aria-controls="collapseTwele">
-         question not answered here?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwele" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwele">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit
-      </div>
-    </div>
-  </div>
-   <!-- Panel End -->  
-  
-  
-</div>
+            <ul class="faq">
+                <li class="q active">Where can I get One Card MasterCard?</li>
+                <li class="a">Signing up is easy.  Vistit <a href="www.onecard.cool" target="_new">www.onecard.cool</a> and click on the sign-up option.</li>
+                
+                <li class="q">Do I need to activate my card before using it?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">How do I use my One Card MasterCard?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">Where can I use my One Card MasterCard Card?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">how can i send money?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">how much does it cost to send money?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">how do i deposit money to my card?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">how long does it take for my contact to receive the money?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">my available card balance will not cover my purchase amount. can i still use my onecard?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">what happens if i need to return an item i purchased using my onecard mastercard?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">i can't find my onecard mastercard card. what should i do?</li>
+                <li class="a">Coming Soon...</li>
+                
+                <li class="q">question not answered here?</li>
+                <li class="a">Coming Soon...</li>
+              </ul>
 
-    </div>
-</div>
- </div>       
+    		</div>
+			</div>
+		</div>       
  <!-- FAQ NAV END --> 
         
         
@@ -612,7 +433,7 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
 <nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
 <div align="center" class="menu-off"><img src="images/menu_off.svg" class="c-menu__close" /></div>
   <ul class="c-menu__items">
-    <li class="c-menu__item active"><a href="#home" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#home" class="c-menu__link">Home</a></li>
     <li class="c-menu__item"><a href="#about" class="c-menu__link">About</a></li>
     <li class="c-menu__item"><a href="#offer" class="c-menu__link">Offer</a></li>
     <li class="c-menu__item"><a href="#usecases" class="c-menu__link">Use Cases</a></li>
@@ -623,11 +444,9 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
 <div id="c-mask" class="c-mask"></div>
 <!-- Main Menu -->
   
-
-<!-- menus script -->
+!-- menus script -->
 <script src="js/dist/menu.js"></script>
-<script>
-  
+<script>  
   /**
    * Slide left instantiation and action.
    */
@@ -644,9 +463,10 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
     e.preventDefault;
     slideLeft.open();
   });
-
 </script>
 
+<script src="js/script.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>
