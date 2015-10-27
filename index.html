@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <title>BlastPay</title>
 <meta charset="utf-8">
 <meta name="keywords" content="">
@@ -18,6 +17,10 @@
 <link rel="stylesheet" type="text/css" href="css/contact.css" />
 <link rel="stylesheet" href="css/style.min.css" />
 
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
 <script src="js/jquery.min.js"></script>
 
 <script>
@@ -26,11 +29,11 @@
 		
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      target = target.length ? target : $('[name=' + this.hash.slice(5) +']');
 	      if (target.length) {
 	        $('html,body').animate({
 	          scrollTop: target.offset().top
-	        }, 500);
+	        }, 1000);
 	        return false;
 	      }		
 	    }
@@ -56,12 +59,22 @@ $(document).ready(function(){
 	});
 	
 });
-
 </script>
+
+<style type="text/css">
+	#demo-content {
+	}
+	</style>
 
 </head>
 <body>
-
+<div id="demo-content">			
+            
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section"></div>
+</div>
+            
 <div class="container-fluid">
 
 <div class="row">
@@ -104,8 +117,7 @@ $(document).ready(function(){
                 <img src="images/BLASTPAY_logo.svg" class="scrollimg" />
             </div>
 
-        
-         
+                 
            <!-- HEADER NAV START -->     
             <nav class="navbar">        
             <div class="navbar-header">                    
@@ -215,7 +227,7 @@ to secure all payment and account data in accordance with PCI DSS standards. Tel
                     
                     <div class="hd-off">online account management</div>
                     <div class="off-desc">
-                    View your BlastPay account balance, traaction history and disbursement reports. Manage administrators authorized to disburse payments. You can always do more 
+                    View your BlastPay account balance, transaction history and disbursement reports. Manage administrators authorized to disburse payments. You can always do more 
 and we will explain this here to you.
                     </div>
                     
@@ -322,41 +334,66 @@ and we will explain this here to you.
 			<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">                        
 
             <ul class="faq">
-                <li class="q active">Where can I get One Card MasterCard?</li>
-                <li class="a">Signing up is easy.  Vistit <a href="www.onecard.cool" target="_new">www.onecard.cool</a> and click on the sign-up option.</li>
+                <li class="q active">Where can I get OneCard MasterCard?</li>
+                <li class="a">Signing up is easy.  Visit <a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">www.onecard.cool</a> and click on the sign-up option.</li>
                 
                 <li class="q">Do I need to activate my card before using it?</li>
-                <li class="a">Coming Soon...</li>
+                <li class="a">Yes. Activate your card in three easy steps:<br/>
+                            1) Log in to <a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">www.onecard.cool</a><br/>
+                            2) Click on "My Accounts"<br/>
+                            3) Click on "Activate My Card"<br/> 
+</li>
+
+
+                <li class="q">how do i deposit money to my card?</li>
+                <li class="a">
+                The best way to deposit money to your card is to set up direct deposit of your paycheck. Take your card's direct deposit information to your employer to get paid electronically each payday.You can also deposit money to your card from your existing bank account. <br/><br/>Log on and link your existing bank account by clicking on "Money Source"</li>
+
                 
                 <li class="q">How do I use my One Card MasterCard?</li>
-                <li class="a">Coming Soon...</li>
+                <li class="a">You can use your OneCard MasterCard anywhere Debit MasterCard cards are accepted. Be sure to know your card balance before you shop. When you're ready to make your purchase, give the cashier your card or, if asked, swipe your card at the terminal. The purchase amount will automatically be deducted from the card balance.</li>
                 
-                <li class="q">Where can I use my One Card MasterCard Card?</li>
-                <li class="a">Coming Soon...</li>
+                <li class="q">Where can I use my OneCard MasterCard Card?</li>
+                <li class="a">You can use your OneCard MasterCard anywhere Debit MasterCard cards are accepted-that's millions of locations worldwide from retail stores to online, mail, and phone orders. You can also use your card to pay bills online.</li>
                 
-                <li class="q">how can i send money?</li>
-                <li class="a">Coming Soon...</li>
+                <li class="q">How can I send money?</li>
+                <li class="a">
+                OneCard empowers you to send money to anyone in the U.S. through the following options:<br />
+                    <ul>
+                        <li>Instantly transfer from OneCard to OneCard</li>
+                        <li>Send to another debit card at another bank in few minutes*</li>
+                        <li>Send to another bank account on the same day**</li>
+                        <li>Send to another bank account in a few days</li>
+                    </ul>
+</li>
                 
-                <li class="q">how much does it cost to send money?</li>
-                <li class="a">Coming Soon...</li>
+                <li class="q">How much does it cost to send money?</li>
+                <li class="a">It depends on the option you choose. For a simple list of fees, click here</li>
                 
-                <li class="q">how do i deposit money to my card?</li>
-                <li class="a">Coming Soon...</li>
                 
-                <li class="q">how long does it take for my contact to receive the money?</li>
-                <li class="a">Coming Soon...</li>
                 
-                <li class="q">my available card balance will not cover my purchase amount. can i still use my onecard?</li>
-                <li class="a">Coming Soon...</li>
+                <li class="q">How long does it take for my contact to receive the money?</li>
+                <li class="a">It depends on the transfer option you choose:
+                    <ul>
+                        <li>If you send to another OneCard user, your contact will have access to the money immediately</li>
+                        <li>If you send to a debit card at another bank, your contact will have access to the money usually within a few minutes*</li>
+                        <li>If you send to another bank account by Wire, your contact will have access to the money usually on the same day**</li>
+                        <li>If you send money to another bank account by ACH, your contact will will have access to the money usually within a few business days**</li>
+                    </ul></li>
                 
-                <li class="q">what happens if i need to return an item i purchased using my onecard mastercard?</li>
-                <li class="a">Coming Soon...</li>
+                <li class="q">My available card balance will not cover my purchase amount. Can I still use my OneCard?</li>
+                <li class="a">Yes, you can still use your OneCard MasterCard. Just tell the cashier in advance how much to deduct from your card and how much you will pay using an alternate payment method.<br/><br/>Note that this process, known as "split tender," may not be supported by all merchants.</li>
                 
-                <li class="q">i can't find my onecard mastercard card. what should i do?</li>
-                <li class="a">Coming Soon...</li>
+                <li class="q">What happens if I need to return an item I purchased using my OneCard MasterCard?</li>
+                <li class="a">When making a return, you may be asked to show the cashier the card used to make the purchase. The value of the returned merchandise will be credited back to your card.</li>
                 
-                <li class="q">question not answered here?</li>
-                <li class="a">Coming Soon...</li>
+                <li class="q">I can't find my OneCard MasterCard card. what should I do?</li>
+                <li class="a">Contact us immediately to report your lost or stolen card and request a replacement card. Rest assured that registered OneCard MasterCard include Zero Liability protection. In the event your card is lost or stolen, CBW Bank will not hold you responsible for unauthorized purchases made on your card.</li>
+                
+                <li class="q">Questions not answered here?</li>
+                <li class="a">We are here to support you 24/7/365!<br /><br />
+                <b>Phone:</b> +1 203-633-2273<br />
+                <a href="https://onecardservices.zendesk.com/hc/en-us/requests/new" target="_new">Click here</a> to submit a support ticket.</li>
               </ul>
 
     		</div>
@@ -422,10 +459,8 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
         </div>
     </div>
     
-      
-   
       <button type="submit" class="btn-contact">send now</button>
-    </form>                       
+    	</form>                       
             
             
 
@@ -433,24 +468,25 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
 </div>
  </div>
  <!-- CONTACT NAV END --> 
-        
-              
-        
-                     
+                
     </div>  
     <!-- RIGHT SIDE PANEL -->                     
     
     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">     
     </div>
     
-</div>
+	</div>
+	</div>
+	</div>
+  </div>  
+
 
 
 <!-- Main Menu -->
 <nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
 <div align="center" class="menu-off"><img src="images/menu_off.svg" class="c-menu__close" /></div>
   <ul class="c-menu__items">
-    <li class="c-menu__item"><a href="#home" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item active"><a href="#home" class="c-menu__link">Home</a></li>
     <li class="c-menu__item"><a href="#about" class="c-menu__link">About</a></li>
     <li class="c-menu__item"><a href="#offer" class="c-menu__link">Offer</a></li>
     <li class="c-menu__item"><a href="#usecases" class="c-menu__link">Use Cases</a></li>
@@ -461,7 +497,7 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
 <div id="c-mask" class="c-mask"></div>
 <!-- Main Menu -->
   
-!-- menus script -->
+<!-- menus script -->
 <script src="js/dist/menu.js"></script>
 <script>  
   /**
@@ -484,6 +520,9 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
 
 <script src="js/script.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
