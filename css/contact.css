@@ -26,6 +26,8 @@
   box-shadow: none;
   border-bottom: 1px solid #999999;
 }
+.validation {  background:url(../images/ico_error.png) no-repeat bottom left; margin-top:3px; display:none; vertical-align:text-bottom; height:22px; font-family:'Lato', sans-serif; font-size:15px; font-weight:500; color:#E91E63; padding:0 0 0 27px; }
+.invalemail {  background:url(../images/ico_error.png) no-repeat bottom left; margin-top:3px; display:none; vertical-align:text-bottom; height:22px; font-family:'Lato', sans-serif; font-size:15px; font-weight:500; color:#E91E63; padding:0 0 0 27px; }
 .input-group .form-control {
   position: relative;
   z-index: inherit;
@@ -38,6 +40,7 @@
   outline: none;
   box-shadow: none;
   color:#0095be;
+
 }
 
 /* -- label styles ---------------------------------- */
