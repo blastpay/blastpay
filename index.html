@@ -19,6 +19,7 @@
 
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/main.css" />
+<script src="js/main.js"></script>
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
   
@@ -88,7 +89,7 @@ $(document).ready(function(){
         </div>
     </div>
 
-    <div class="pull-right">
+    <div class="pull-right hidden-sm hidden-xs">
         <div class="login-nav">
             <button class="btn-login">Log in</button><button class="btn-apply">Apply</button>
         </div>
@@ -497,8 +498,12 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
     <li class="c-menu__item"><a href="#usecases" class="c-menu__link">Use Cases</a></li>
     <li class="c-menu__item"><a href="#faq" class="c-menu__link">FAQ</a></li>
     <li class="c-menu__item"><a href="#contact" class="c-menu__link">Contact</a></li>
+    <div class="visible-sm visible-xs">
+    <li class="c-menu__item"><a href="#login" class="c-menu__link">login</a></li>
+    <li class="c-menu__item"><a href="#apply" class="c-menu__link">Apply</a></li>
+    </div>
   </ul>
-  <div class="mfooter">
+  <div class="mfooter hidden-sm hidden-xs">
   	<img src="images/blastpay_logo_menu.svg" />
     
     <div class="mftext">
@@ -574,8 +579,7 @@ function isEmail(email) {
 </script>
 
 <script src="js/script.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script> 
+<script src="bootstrap/js/bootstrap.min.js"></script> 
 
 </body>
 </html>
