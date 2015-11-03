@@ -1,3 +1,4 @@
+body { overflow:hidden; }
 @font-face {
     font-family:Museo300;
 	src:url(../fonts/museo-300.ttf);
