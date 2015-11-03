@@ -1,4 +1,4 @@
-body { overflow:hidden; }
+body {  }
 @font-face {
     font-family:Museo300;
 	src:url(../fonts/museo-300.ttf);
@@ -65,7 +65,7 @@ body { overflow:hidden; }
 
 
 /* Home Style Start */
-.homenav { float:left; width:100%; margin:0px 0 0 0; padding:25px 0;}
+.homenav { float:left; width:100%; margin:0px 0 0 0; padding:25px 0;  }
 /* Home Style end */
 
 /* About Style Start */
