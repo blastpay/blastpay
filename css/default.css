@@ -1,4 +1,5 @@
-body {  }
+body { overflow-y:hidden; }
+.container-fluid { }
 @font-face {
     font-family:Museo300;
 	src:url(../fonts/museo-300.ttf);
