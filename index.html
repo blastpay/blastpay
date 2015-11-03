@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="css/default.css" />
 <link rel="stylesheet" type="text/css" href="css/contact.css" />
 <link rel="stylesheet" href="css/style.min.css" />
+<link rel="stylesheet" href="css/animate.css" />
 
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/main.css" />
@@ -122,7 +123,7 @@ $(document).ready(function(){
             <div class="navbar-header">                    
     
                 <div class="text-center home-logo">
-                    <img src="images/BLASTPAY_logo.svg" />
+                    <img src="images/BLASTPAY_logo.svg"/>
                 </div>                        
     
             </div>
@@ -131,7 +132,7 @@ $(document).ready(function(){
           
           
   		<!-- HOME NAV START -->
-        <div class="homenav">
+        <div class="homenav animated slideInUp">
   		<div class="home-desc">
         	<div class="home-txt1">Fast and simple<br/>individual or mass payments</div>
             <div class="home-txt2">On the other hand, we denounce with righteous indignation<br/>and dislike men who are so beguild and how much demoralized.</div>
@@ -556,8 +557,7 @@ function isEmail(email) {
 		if( email != undefined && email != '' && isEmail(email)==false)
 			$(this).find('.invalemail').show(100);
 		else 
-			$(this).find('.invalemail').hide(100);
-	  
+			$(this).find('.invalemail').hide(100);	  
 	});
 	
 	/*

@@ -23,7 +23,6 @@
       callback(item);
     }
   }
-
   /**
    * Menu Constructor.
    */
