@@ -108,7 +108,7 @@
    */
   Menu.prototype.enableMenuOpeners = function() {
     each(this.menuOpeners, function(item) {
-      item.disabled = false;
+      item.disabled = true;
     });
   };
 
