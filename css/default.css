@@ -498,3 +498,10 @@ h3.active a { color:#00A6D3 !important; }
         opacity: 0;
     }
 }
+
+.fadeIn {
+	-webkit-animation-delay:0.3s; /* Chrome, Safari, Opera */
+	-moz-animation-delay:0.3s; /* Chrome, Safari, Opera */
+    animation-delay:0.3s;
+	}
+	
