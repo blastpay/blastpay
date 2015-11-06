@@ -9,7 +9,7 @@
 @media all and (min-width:480px){.o-footer{padding:24px 0}}@media all and (min-width:720px){.o-sub-nav{margin:0 0 48px}.o-footer{padding:48px 0}}.c-menu{z-index:200;background-color:#202020;transition:transform .3s}.c-menu__items {list-style:none; color: #999999; font-family:'Lato', sans-serif; font-size:12px; font-weight:700;
 	text-align:center; letter-spacing:2px;
 	text-transform:uppercase; margin:0;padding:10px 0;}
-.c-menu__items a:hover { background:#303030; color:#fff; text-decoration:none; font-family:'Lato', sans-serif; font-size:12px; font-weight:400;
+.c-menu__items a:hover { color:#fff; text-decoration:none; font-family:'Lato', sans-serif; font-size:12px; font-weight:400;
 	text-align:center; letter-spacing:2px; }
 .c-menu__items .active { background:#303030; color:#fff !important; text-decoration:none; font-family:'Lato', sans-serif; font-size:12px; font-weight:500 !important;
 	text-align:center; letter-spacing:2px; }
