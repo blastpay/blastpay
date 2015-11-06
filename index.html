@@ -14,33 +14,18 @@
 <!--Main CSS-->
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/default.css" />
-<link rel="stylesheet" type="text/css" href="css/contact.css" />
 <link rel="stylesheet" href="css/style.min.css" />
 <link rel="stylesheet" href="css/animate.css" />
 
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/main.css" />
-
-<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/script.js"></script>
 <script src="js/jquery.min.js"></script>
-<script>
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {	
-		
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(5) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 0);
-	        return false;
-	      }		
-	    }
-	  });
-	});
-</script>
- 
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/app.js"></script>
+
 <script>
 $(document).ready(function(){
 	
@@ -56,36 +41,35 @@ $(document).ready(function(){
 	$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop :0},500);
 		return false;
-	});
-	
+	});	
 });
 </script>
 
-<style type="text/css">
-	#demo-content {
-	}
-	</style>
 <link rel="import" href="https://www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html" />
 </head>
-<body>
+<body ng-app="MyApp">
 
-<div id="demo-content">			
-            
+<!-- Page Loader -->
 <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader-section section"></div>
 </div>
+<!-- Page Loader -->
+            
             
 <div class="container-fluid">
 
+<!-- Top Right Nav-->
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 <div class="topheader">
-
 	<div class="pull-left">
+    
+    
         <div class="menu-on">
             <button id="c-button--slide-left" class="btn-menu-on"></button>
+              <div id="divMenuAnim" class="pulse1"></div>
         </div>
     </div>
 
@@ -97,30 +81,26 @@ $(document).ready(function(){
         </div>
         </div>
     </div>
-
-	
 </div>
     
 </div>
 </div>
+<!-- Top Right Nav-->
 
 	
     	<div class="row">
     
             <!-- LEFT SIDE PANEL -->     
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="o-wrapper">        
-                                 
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="o-wrapper">          
             </div>
             <!-- LEFT SIDE PANEL -->     
         
-    		<!-- RIGHT SIDE PANEL -->                     
-                
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="home">
+    		<!-- RIGHT SIDE PANEL -->                                     
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
             
             <div class="scrollToTop hidden-xs header1">
                 <img src="images/BLASTPAY_logo.svg" class="scrollimg" />
             </div>
-
                  
            <!-- HEADER NAV START -->     
             <nav class="navbar">        
@@ -134,357 +114,9 @@ $(document).ready(function(){
             </nav>
           <!-- HEADER NAV END --> 
           
+
+          <div ui-view></div>
           
-  		<!-- HOME NAV START -->
-        <div class="homenav animated slideInUp">
-  		<div class="home-desc">
-        	<div class="home-txt1">Fast and simple<br/>individual or mass payments</div>
-            <div class="home-txt2">On the other hand, we denounce with righteous indignation<br/>and dislike men who are so beguild and how much demoralized.</div>
-        </div>
-        
-        <div class="text-center btn-abt-nav">
-        
-        <div class="btn-abt raised">
-          about blastpay
-          <paper-ripple fit></paper-ripple>
-        </div>
-        
-        </div>
-        
-		<div class="homeimg"></div> 
-        </div>   
-		<!-- HOME NAV START -->
-
-
-        <!-- ABOUT NAV START -->
-        <div class="abtnav" id="about">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
-            
-                    <div class="hd-nav">
-                        <div class="inner-hd">innovative. fast. steady. reliable</div>
-                        <div class="inner-hd2"><a href="#offer" class="link-off">see what we offer</a></div>
-                    </div>
-                
-                    <div class="shd">Problem you can solve</div>
-                    
-                    <div class="inner-desc text-justify">
-                    BlastPay uses existing debit card networks to "push" payment to over 80% of all debit cards issued in the U.S. Similar to ACH direct deposit, a payee simply provides their debit card account information and we originate the deposit. Your payee receives payment within a few minutes. BlastPay also supports ACH and Wire payments so you can manage multiple disbursement 
-            options from a one place.
-                    </div>
-                    
-                    <div class="shd">Blastpay solution</div>
-                    
-                    <div class="inner-desc text-justify">
-                    BlastPay uses existing debit card networks to "push" payment to over 80% of all debit cards issued in the U.S. Similar to ACH direct deposit, a payee simply provides their debit card account information and we originate the deposit. Your payee receives payment within a few minutes. BlastPay also supports ACH and Wire payments so you can manage multiple disbursement 
-            options from a one place.
-                    </div>
-            
-            </div>
-        </div>
-        </div>
-        <!-- ABOUT NAV END --> 
-        
-        
-        <!-- OFFER NAV END --> 
-		<div class="offernav" id="offer"> 
-        
-        <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">      
-              
-            <div class="shd">Blastpay account offer</div>
-            
-            <div class="inner-desc text-justify">
-            Anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious procedures employer finance banking here.
-            </div>
-            
-            <div class="off-spacer"></div>
-            
-            <div class="row">
-            	<div class="col-lg-5 col-md-5 col-sm-5">
-                
-                    <div class="hd-off">FDIC Insured Account</div>
-                    <div class="off-desc">
-                    Before your payouts are disbursed, all funds are held in a secure account: CBW Bank, Member FDIC. You can always add more information which is crucial for understanding your product
-                    </div>
-                    
-                    
-                    <div class="hd-off">Link  to External Bank Accounts</div>
-                    <div class="off-desc">
-                    Move money between your existing operating account and BlastPay account for me payout. More ingo bla heritage your bug
-benefit from this feature here explain more. Money and funding safety nice.
-                    </div>
-                    
-                    <div class="hd-off">Single Payouts</div>
-                    <div class="off-desc">
-                    Add a single payee and disburse payment securely online. Information about this and here about benefits clearly state what will be your benefit of using this.
-                    </div>
-                    
-                
-                </div>
-                
-                <div class="col-lg-2 col-md-2 col-sm-2"></div>
-                
-            	<div class="col-lg-5 col-md-5 col-sm-5">
-                
-<div class="hd-off">Bank-grade Securit & Compliance</div>
-                    <div class="off-desc">
-                    BlastPay utilizes best-of-class technology 
-to secure all payment and account data in accordance with PCI DSS standards. Tell me more about ie here. And some more information to provide.
-                    </div>
-                    
-                    
-                    <div class="hd-off">online account management</div>
-                    <div class="off-desc">
-                    View your BlastPay account balance, transaction history and disbursement reports. Manage administrators authorized to disburse payments. You can always do more 
-and we will explain this here to you.
-                    </div>
-                    
-                    <div class="hd-off">Mass Payouts</div>
-                    <div class="off-desc">
-                    Upload one file containing multiple payees and disbursement options. BlastPay eliminates the complexity payment disbursements. Take advantage and use this place to explain how good mad men are.
-                    </div>
-                
-                </div>
-            </div>
-    
-    	</div>
-		</div>
-            
-        </div>
-        <!-- OFFER NAV END --> 
-        
-        
-        
-        <!-- USE CASES NAV START --> 
-        <div class="ucasesnav" id="usecases">
-        
-<div class="row">
-	<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">        
-            <div class="shd">Use cases that will shock you</div>
-            
-            <div class="inner-desc text-justify">
-            Anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great something  or To take a trivial example, which of us ever undertakes laborious.
-            </div>
-            
-            <div class="off-spacer"></div>
-            
-            <!-- Row Start -->            
-            <div class="row">
-            	<div class="col-lg-4 col-md-4 col-sm-4">                
-                	<img src="images/img-enterprices.png" class="img-ucase" />
-                </div>                
-            	<div class="col-lg-8 col-md-8 col-sm-8">
-                
-                    <div class="ucase-descnav"> 
-                    <div class="ucase-hd">enterprise payroll</div>
-                        <ul class="ucase-list">
-                            <li>Disburse salaries same day vs. 3 days before payday</li>
-                            <li>Remote, time sensitive payroll disbursement</li>
-                            <li>Termination pay</li>
-                        </ul>                              
-                     </div>   
-                    
-                </div>
-            </div>
-            <!-- Row Start -->            
-            
-			<!-- Row Start -->            
-            <div class="row">
-            	<div class="col-lg-4 col-md-4 col-sm-4">                
-                	<img src="images/img-provider.png" class="img-ucase"/>
-                </div>                
-            	<div class="col-lg-8 col-md-8 col-sm-8">
-                
-                    <div class="ucase-descnav"> 
-                    <div class="ucase-hd">PROVIDER AND MEMBER CLAIM PAYMENTS</div>
-                        <ul class="ucase-list">
-                            <li>Supplement existing disbursement options</li>
-                            <li>Time sensitive reimbursements</li>
-                            <li>Charge Provider or Member for premium disbursement</li>
-                        </ul>                            
-                     </div>   
-                    
-                </div>
-            </div>
-            <!-- Row Start -->
-            
-            
-			<!-- Row Start -->            
-            <div class="row">
-            	<div class="col-lg-4 col-md-4 col-sm-4">                
-                	<img src="images/img-sales.png" class="img-ucase"/>
-                </div>                
-            	<div class="col-lg-8 col-md-8 col-sm-8">
-                
-                    <div class="ucase-descnav"> 
-                    <div class="ucase-hd">SALES ORGANIZATIONS</div>
-                        <ul class="ucase-list">
-                            <li>Commision payments</li>
-                            <li>Same day disbursements</li>
-                            <li>Charge sales rep for premium disbursement</li>
-                        </ul>                              
-                     </div>   
-                    
-                </div>
-            </div>
-            <!-- Row Start -->                                       
-    </div>
-</div>
-        
-        </div>
-        <!-- USE CASES NAV END --> 
-        
-        
-        <!-- FAQ NAV START --> 
-		<div class="faqnav" id="faq">        
-
-			<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">                        
-
-            <ul class="faq">
-                <li class="q active">Where can I get OneCard MasterCard?</li>
-                <li class="a">Signing up is easy.  Visit <a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">www.onecard.cool</a> and click on the sign-up option.</li>
-                
-                <li class="q">Do I need to activate my card before using it?</li>
-                <li class="a">Yes. Activate your card in three easy steps:<br/>
-                            1) Log in to <a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">www.onecard.cool</a><br/>
-                            2) Click on "My Accounts"<br/>
-                            3) Click on "Activate My Card"<br/> 
-</li>
-
-
-                <li class="q">how do i deposit money to my card?</li>
-                <li class="a">
-                The best way to deposit money to your card is to set up direct deposit of your paycheck. Take your card's direct deposit information to your employer to get paid electronically each payday.You can also deposit money to your card from your existing bank account. <br/><br/>Log on and link your existing bank account by clicking on "Money Source"</li>
-
-                
-                <li class="q">How do I use my One Card MasterCard?</li>
-                <li class="a">You can use your OneCard MasterCard anywhere Debit MasterCard cards are accepted. Be sure to know your card balance before you shop. When you're ready to make your purchase, give the cashier your card or, if asked, swipe your card at the terminal. The purchase amount will automatically be deducted from the card balance.</li>
-                
-                <li class="q">Where can I use my OneCard MasterCard Card?</li>
-                <li class="a">You can use your OneCard MasterCard anywhere Debit MasterCard cards are accepted-that's millions of locations worldwide from retail stores to online, mail, and phone orders. You can also use your card to pay bills online.</li>
-                
-                <li class="q">How can I send money?</li>
-                <li class="a">
-                OneCard empowers you to send money to anyone in the U.S. through the following options:<br />
-                    <ul>
-                        <li>Instantly transfer from OneCard to OneCard</li>
-                        <li>Send to another debit card at another bank in few minutes*</li>
-                        <li>Send to another bank account on the same day**</li>
-                        <li>Send to another bank account in a few days</li>
-                    </ul>
-</li>
-                
-                <li class="q">How much does it cost to send money?</li>
-                <li class="a">It depends on the option you choose. For a simple list of fees, click here</li>
-                
-                
-                
-                <li class="q">How long does it take for my contact to receive the money?</li>
-                <li class="a">It depends on the transfer option you choose:
-                    <ul>
-                        <li>If you send to another OneCard user, your contact will have access to the money immediately</li>
-                        <li>If you send to a debit card at another bank, your contact will have access to the money usually within a few minutes*</li>
-                        <li>If you send to another bank account by Wire, your contact will have access to the money usually on the same day**</li>
-                        <li>If you send money to another bank account by ACH, your contact will will have access to the money usually within a few business days**</li>
-                    </ul></li>
-                
-                <li class="q">My available card balance will not cover my purchase amount. Can I still use my OneCard?</li>
-                <li class="a">Yes, you can still use your OneCard MasterCard. Just tell the cashier in advance how much to deduct from your card and how much you will pay using an alternate payment method.<br/><br/>Note that this process, known as "split tender," may not be supported by all merchants.</li>
-                
-                <li class="q">What happens if I need to return an item I purchased using my OneCard MasterCard?</li>
-                <li class="a">When making a return, you may be asked to show the cashier the card used to make the purchase. The value of the returned merchandise will be credited back to your card.</li>
-                
-                <li class="q">I can't find my OneCard MasterCard card. what should I do?</li>
-                <li class="a">Contact us immediately to report your lost or stolen card and request a replacement card. Rest assured that registered OneCard MasterCard include Zero Liability protection. In the event your card is lost or stolen, CBW Bank will not hold you responsible for unauthorized purchases made on your card.</li>
-                
-                <li class="q">Questions not answered here?</li>
-                <li class="a">We are here to support you 24/7/365!<br /><br />
-                <b>Phone:</b> +1 203-633-2273<br />
-                <a href="https://onecardservices.zendesk.com/hc/en-us/requests/new" target="_new">Click here</a> to submit a support ticket.</li>
-              </ul>
-
-    		</div>
-			</div>
-		</div>       
- <!-- FAQ NAV END --> 
-        
-        
-
- <!-- CONTACT NAV END --> 
- <div class="contactnav" id="contact">
- <div class="row">
-	<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
-        
-            <div class="shd">We are always happy to hear from you</div>            
-            <div class="inner-desc text-justify">
-            Write to us any time, we will try to answer as soon as possible.<br/>
-Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a> or via form below.
-            </div>
-            
-	<form role="form" id="contactForm" method="get">
-    
-    <div class="row">
-    	<div class="col-lg-3 col-md-3 col-sm-3">
-            <div class="form-group required">
-            <input type="text" class="form-control" name="contname" id="contname" required />
-            <span class="form-highlight"></span>
-            <span class="form-bar"></span>
-            <label class="float-label" for="contname">your name:</label>
-            <span for="contname" class="validation">Fill this field!</span>            
-            </div>
-        </div>
-        
-    	<div class="col-lg-3 col-md-3 col-sm-3">
-            <div class="form-group required">
-            <input type="email" class="form-control" id="contemail" required />
-            <span class="form-highlight"></span>
-            <span class="form-bar"></span>
-            <label class="float-label" for="contemail">contact email:</label>
-            <span class="validation">Fill this field!</span>
-            <span class="invalemail">Invalid email address!</span>
-            </div>
-            
-        </div>
-    	<div class="col-lg-3 col-md-3 col-sm-3">
-            <div class="form-group required">
-            <input type="text" class="form-control" id="contsubject" required />
-            <span class="form-highlight"></span>
-            <span class="form-bar"></span>
-            <label class="float-label" for="contsubject">subject:</label>
-            <span class="validation">Fill this field!</span>
-            </div>
-
-        </div>        
-    </div>
-    
-    <div class="row">
-    	<div class="col-lg-9 col-md-9 col-sm-9">
-        <div class="form-group textareanav required">
-	        <textarea class="form-control textarea" rows="3" id="contmsg" required></textarea>
-            <span class="form-highlight"></span>
-            <span class="form-bar"></span>
-            <label class="float-label txtlabel" for="contmsg">your message:</label>
-            <span class="validation">Fill this field!</span>
-            </div>
-        
-        
-       
-        </div>
-    </div>
-    
-		<div class="btn-contact raised">
-          send now
-          <paper-ripple fit></paper-ripple>
-        </div>
-    	</form> 
-     
-
-    </div>
-</div>
- </div>
- <!-- CONTACT NAV END --> 
                 
     </div>  
     <!-- RIGHT SIDE PANEL -->                     
@@ -503,12 +135,12 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
 <nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
 <div align="center" class="menu-off"><img src="images/menu_off.svg" class="c-menu__close" /></div>
   <ul class="c-menu__items">
-    <li class="c-menu__item raised"><a href="#home" class="c-menu__link">Home <paper-ripple fit></paper-ripple></a></li>
-    <li class="c-menu__item raised"><a href="#about" class="c-menu__link">About<paper-ripple fit></paper-ripple></a></li>
-    <li class="c-menu__item raised"><a href="#offer" class="c-menu__link">Offer<paper-ripple fit></paper-ripple></a></li>
-    <li class="c-menu__item raised"><a href="#usecases" class="c-menu__link">Use Cases<paper-ripple fit></paper-ripple></a></li>
-    <li class="c-menu__item raised"><a href="#faq" class="c-menu__link">FAQ<paper-ripple fit></paper-ripple></a></li>
-    <li class="c-menu__item raised"><a href="#contact" class="c-menu__link">Contact<paper-ripple fit></paper-ripple></a></li>
+    <li class="c-menu__item raised"><a class="c-menu__link" ui-sref="home">Home <paper-ripple fit></paper-ripple></a></li>
+    <li class="c-menu__item raised"><a class="c-menu__link" ui-sref="about">About<paper-ripple fit></paper-ripple></a></li>
+    <li class="c-menu__item raised"><a class="c-menu__link" ui-sref="offer">Offer<paper-ripple fit></paper-ripple></a></li>
+    <li class="c-menu__item raised"><a class="c-menu__link" ui-sref="usecases">Use Cases<paper-ripple fit></paper-ripple></a></li>
+    <li class="c-menu__item raised"><a class="c-menu__link" ui-sref="faq">FAQ<paper-ripple fit></paper-ripple></a></li>
+    <li class="c-menu__item raised"><a class="c-menu__link" ui-sref="contact">Contact<paper-ripple fit></paper-ripple></a></li>
     <div class="visible-sm visible-xs">
     <li class="c-menu__item raised"><a href="#login" class="c-menu__link">login<paper-ripple fit></paper-ripple></a></li>
     <li class="c-menu__item raised"><a href="#apply" class="c-menu__link">Apply<paper-ripple fit></paper-ripple></a></li>
@@ -531,7 +163,6 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
 <!-- Main Menu -->
   
 <!-- menus script -->
-
 <script src="js/dist/menu.js"></script>
 <script>  
   /**
@@ -555,41 +186,23 @@ function isEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email);
 }  
-  $('.required').focusout(function(){
-	  if($(this).find('input, textarea').val()=='')
-	  {
-		  $(this).find('.validation').show(100);
-	  }
-	  else
-	  {
-		  $(this).find('.validation').hide(100);
-	  } 
-	  
-	  var email = $(this).find('input[type="email"]').val();
-		if( email != undefined && email != '' && isEmail(email)==false)
-			$(this).find('.invalemail').show(100);
-		else 
-			$(this).find('.invalemail').hide(100);	  
-	});
 	
-	/*
-	$("#contactForm").submit(function(){
-		$('.required').each(function(){
-			alert($(this).html());
-			$(this).focusout();
-		});
-		 var count = $('.required').find('span.validation:visible').length;
-		 count = count + $('.required').find('span.invalemail:isvisible').length;
-		 alert('Count'+count);
-		 if(count != NaN && count >0)
-		 	return false;
-	});
-	*/
 	
-</script>
-<script src="js/main.js"></script>
-<script src="js/script.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script> 
+$(function(){
+	$('a.c-menu__link').click(function(){
+		$('a.c-menu__link').removeClass("active");
+		$(this).addClass("active");
+	});
+})
 
+$(function(){
+	$('.menu-on button').click(function(){
+		$('#divMenuAnim').removeClass('pulse1');
+	});
+});
+</script>
+
+<script src="js/main.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script> 
 </body>
 </html>

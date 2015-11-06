@@ -39,6 +39,7 @@
     wrapper: '#o-wrapper',          // The content wrapper
     type: 'slide-left',             // The menu type
     menuOpenerClass: '.c-button',   // The menu opener class names (i.e. the buttons)
+	addclass:'animated fadeIn',
     maskId: '#c-mask'               // The ID of the mask
   };
 
