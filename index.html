@@ -43,7 +43,7 @@ $(document).ready(function(){
 	
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop :0},100);
+		$('html, body').animate({scrollTop :0},20);
 		return false;
 	});	
 });
@@ -91,6 +91,12 @@ $(document).ready(function(){
 
 	
     	<div class="row">
+        
+        
+			<div class="scrollToTop hidden-sm hidden-xs header1">
+                <img src="images/BLASTPAY_logo.svg" class="scrollimg" />
+            </div>
+                 
     
             <!-- LEFT SIDE PANEL -->     
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="o-wrapper">          
@@ -99,14 +105,7 @@ $(document).ready(function(){
         
     		<!-- RIGHT SIDE PANEL -->                                     
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-            
-            <div class="scrollToTop hidden-sm hidden-xs header1">
-                <img src="images/BLASTPAY_logo.svg" class="scrollimg" />
-            </div>
-                 
-          
-
-          <div ui-view></div>
+	         <div ui-view></div>
           
                 
     </div>  
