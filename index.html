@@ -100,7 +100,7 @@ $(document).ready(function(){
             <!-- LEFT SIDE PANEL -->     
         
     		<!-- RIGHT SIDE PANEL -->                                     
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 mc">
 	         <div ui-view></div>         
             </div>  
             <!-- RIGHT SIDE PANEL -->                     
@@ -165,6 +165,8 @@ $(document).ready(function(){
     e.preventDefault;
     slideLeft.open();
   });
+
+$('.mc').click(function(){ slideLeft.close();});
 
 function isEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
