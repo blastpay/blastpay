@@ -586,8 +586,10 @@ h3.active a { color:#00A6D3 !important; }
     animation-delay:0.3s;
 	}
 	
+@media screen and ( min-width: 1200px ){
+	.mfooterv { display:block; }
+}
 
-@media (max-height:300px){
-	.mfooter { display:none; }
-	
+@media screen and ( min-width:900px ) and ( max-height:730px ){
+	.mfooterv { display:none; }	
 	}
