@@ -32,9 +32,9 @@ body {  }
 
 .login-nav { padding:35px 55px 0 0; float:right; }
 .topheader { position:fixed; width:100%; }
-.btn-login { padding:9px 15px; margin:0 15px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; text-decoration:none; background:none; border:none; color:#009dc8; outline:none; float:left; }
+.btn-login { padding:9px 15px; margin:0 15px; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; text-decoration:none; background:none; border:none; color:#009dc8; outline:none; float:left;}
 .btn-login:active{ color:#006d8b; }
-.btn-apply { padding:6px 0px; cursor:pointer; text-align:center; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; font-size:12px; font-weight:700; border:1px solid #009dc8; box-shadow:0px 2px 5px rgba(0, 0, 0, 0.25); color:#00a6d3; width:118px; height:34px; outline:none; position:relative; overflow:hidden; float:left; }
+.btn-apply { padding:6px 0px; cursor:pointer; text-align:center; text-transform:uppercase; letter-spacing:1px; font-family:'Lato', sans-serif; background:#fff; font-size:12px; font-weight:700; border:1px solid #009dc8; box-shadow:0px 2px 5px rgba(0, 0, 0, 0.25); color:#00a6d3; width:118px; height:34px; outline:none; position:relative; overflow:hidden; float:left; }
 
 .homeimg { width:100%; float:left; text-align:center; }
 .footer-img { bottom:0px; }
