@@ -20,7 +20,7 @@ body {  }
 	display:none;
 }
 
-.header1 { text-align:center; margin:auto 0px; margin-left:-15px; padding:40px 0 50px 0; width:100%; margin-top:-1px; position:static; background:#fff; float:left; z-index:100;}
+.header1 { text-align:center; margin:auto; margin-left:-15px; padding:40px 0 50px 0;  margin-top:-1px; width:67%; background:#fff; z-index:50;}
 .header3 { text-align:center; margin:auto; padding:40px 0 40px 0; width:65%; margin-top:-1px; background:#fff; float:left; z-index:100; position:fixed; top:0;}
 
 .header { float:left; width:100%; margin:auto; }
@@ -78,19 +78,19 @@ body {  }
 /* Home Style end */
 
 /* About Style Start */
-.abtnav { float:left; width:100%; margin:100px 0 0 0; padding:0px 0 40px 0; }
+.abtnav { float:left; width:100%; margin:130px 0 0 0; padding:0px 0 40px 0; position:static; z-index:0; }
 /* About Style End */
 
 /* Offer Style Start */
-.offernav { float:left; width:100%; margin:100px 0 0 0; padding:0px 0 40px 0; }
+.offernav { float:left; width:100%; margin:130px 0 0 0; padding:0px 0 40px 0; position:static; z-index:0; }
 /* Offer Style End */
 
 /* Use Cases Style Start */
-.ucasesnav { float:left; width:100%; margin:100px 0 0 0; padding:0px 0 40px 0; }
+.ucasesnav { float:left; width:100%; margin:130px 0 0 0; padding:0px 0 40px 0; position:static; z-index:0; }
 /* Use Cases Style End */
 
 /* FAQ Style Start */
-.faqnav { float:left; width:100%; margin:100px 0 0 0; padding:0px 0 40px 0; }
+.faqnav { float:left; width:100%; margin:130px 0 0 0; padding:0px 0 40px 0; position:static; z-index:0; }
 
 .rotate {
   -moz-transform: rotate(90deg);
@@ -101,7 +101,7 @@ body {  }
 /* FAQ Style End */
 
 /* Contact Style Start */
-.contactnav { float:left; width:100%; margin:100px 0 0 0; padding:0px 0 100px 0; }
+.contactnav { float:left; width:100%; margin:140px 0 0 0; padding:0px 0 100px 0; position:static; z-index:0; }
 .float-label { font-family:'Lato', sans-serif; font-size:12px !important; font-weight:700; color:#313131; letter-spacing:1px; text-transform:uppercase; }
 /* Contact Style End */
 
