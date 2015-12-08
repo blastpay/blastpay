@@ -71,9 +71,15 @@ $(document).ready(function(){
         <div class="pull-left">        
             <div class="menu-on">
                 <button id="c-button--slide-left" class="btn-menu-on"></button>
-                  <div id="divMenuAnim" class="pulse1"></div>
+                  <div id="divMenuAnim"></div>
             </div>
         </div>
+                
+        
+			<div class="scrollToTop hidden-sm hidden-xs header1">
+                <img src="images/BLASTPAY_logo.svg" class="scrollimg" />
+            </div>               
+        
 
     	<div class="pull-right hidden-sm hidden-xs">
             <div class="login-nav">
@@ -134,6 +140,7 @@ $(document).ready(function(){
   	<img src="images/blastpay_logo_menu.svg" />
     
     <div class="mftext">
+    <div style="display:none;">
     <span class="mftext3">Yantra Services</span><br/><br/>
     <span class="mftext2">Corporate Office</span><br/>
     3745 SW Wanamaker Road, Suite B<br/>
@@ -142,6 +149,7 @@ $(document).ready(function(){
     <span class="mftext2">Satellite Business Office</span><br/>
     840 Massachusetts St<br/>
     Lawrence, KS 66044<br/><br/>
+    </div>
     <a href="http://www.yantrapayments.com" target="_new">www.yantrapayments.com</a><br/>
     Copyright &#x24B8; Blastpay 2015
     </div>
@@ -184,15 +192,19 @@ $(function(){
 		$(this).addClass("active");
 	});
 })
-
-$(function(){
-	$('.menu-on button').click(function(){
-		$('#divMenuAnim').removeClass('pulse1');
-	});
-});
 </script>
 
 <script src="js/main.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script> 
 </body>
+<script>
+$(function(){
+	setTimeout(function(){	
+		$('.btn-menu-on').css( 'animation', 'shake 100ms 2 linear');
+		$('.btn-menu-on').css( '-webkit-animation', 'shake 100ms 2 linear');			
+		$('.btn-menu-on').css( '-moz-animation', 'shake 100ms 2 linear');			
+		$('.btn-menu-on').css( '-o-animation', 'shake 100ms 2 linear');			
+	},2000);
+});
+</script>
 </html>

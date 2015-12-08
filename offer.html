@@ -1,10 +1,4 @@
  <!-- OFFER NAV END --> 
- 
- 		<div class="header3  animated fadeIn">
-	        <img src="images/BLASTPAY_logo.svg" class="scrollimg" />
-        </div>
- 
- 
 		<div class="offernav animated fadeIn" id="offer"> 
        
         
@@ -74,3 +68,9 @@ and we will explain this here to you.
         <!-- OFFER NAV END --> 
         
 		<div ui-view></div>
+                <script>
+			$(function(){
+				$('a.c-menu__link').removeClass("active");
+				$('a[ui-sref="offer"]').addClass("active");
+			});
+		</script>
