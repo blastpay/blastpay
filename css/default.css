@@ -20,8 +20,8 @@ body {  }
 	display:none;
 }
 
-.header1 { text-align:center; margin:auto; margin-left:-15px; padding:40px 0 50px 0;  margin-top:-1px; width:67%; background:#fff; z-index:50;}
-.header3 { text-align:center; margin:auto; padding:45px 0 40px 0; width:65%; margin-top:-1px; background:#fff; float:left; z-index:100; position:fixed; top:0;}
+.header1 { text-align:center; margin:auto; margin-left:-15px; padding:40px 0 50px 0;  margin-top:-1px; width:67%; background:#fff; z-index:200;}
+.header3 { text-align:center; margin:auto; margin-left:-15px; padding:40px 0 50px 0; margin-top:-1px; width:67%; z-index:100; position:fixed; top:0; float:left; }
 
 .header { float:left; width:100%; margin:auto; }
 .home-logo { padding:0px 0 0 0; width:100%; margin:auto; }

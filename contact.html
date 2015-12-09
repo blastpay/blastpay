@@ -1,6 +1,6 @@
  <!-- CONTACT NAV END --> 
  
-  		<div class="header3 animated fadeIn">
+  		<div class="header3">
 	        <img src="images/BLASTPAY_logo.svg" class="scrollimg" />
         </div>
  
@@ -15,7 +15,7 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
             </div>
             
             
-			<form name="form" novalidate>
+		<form name="form"  id="myForm" novalidate>
             
     <div class="row">
     	<div class="col-lg-4 col-md-4 col-sm-4">
@@ -81,12 +81,19 @@ Please contact us on: <a href="mailto:hello@blastpay.com">hello@blastpay.com</a>
      
     <div class="">
     	<div class="col-lg-12 col-md-12 col-sm-12">
+        
         <div class="btn-cont-nav">
-            <div class="btn-contact raised">
+            <div class="btn-contact raised" id="submitBtn">
               send now
               <paper-ripple fit></paper-ripple>
             </div>
         </div>
+        
+        <div class="btn-msg-nav hide">
+            <div class="icon-msg"></div><div class="msg-text">YOUR MESSAGE HAS BEEN SENT!</div>
+        </div>
+        
+        
      	</div>
      </div>
 
