@@ -63,63 +63,54 @@ $(document).ready(function(){
             
 <div class="container-fluid">
 
-<!-- Top Right Nav-->
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-	<div class="topheader"> 
-       
-        <div class="pull-left">        
+	<nav class="navbar navbar-default navbar-fixed-top">     
+    <div id="navbar" class="navbar-collapse">
+         
             <div class="menu-on">
                 <button id="c-button--slide-left" class="btn-menu-on"></button>
                   <div id="divMenuAnim"></div>
             </div>
-        </div>        
-
-    	<div class="pull-right hidden-sm hidden-xs">
-            <div class="login-nav">
-                           		
+            
+            <div class="navbar-brand scrollToTop"><img src="images/BLASTPAY_logo.svg" class="scrollimg" /></div>
+           
+    		<div class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+            <div class="login-nav">                           		
                 	<button class="btn-login">Log in</button>
                		<button class="btn-apply raised grey">Apply
-                    <paper-ripple fit></paper-ripple></button>
-                           
-        </div>
-                
-    </div>
-    
-</div>    
-</div>
+                    <paper-ripple fit></paper-ripple></button>                           
+        	</div>        
+        	</div>
+            
+    </div>  
+    </nav>
 
-</div>
-<!-- Top Right Nav-->
 
 	
     	<div class="row">
                      
             <!-- LEFT SIDE PANEL -->     
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="o-wrapper">          
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1" id="o-wrapper">          
             </div>
             <!-- LEFT SIDE PANEL -->     
         
     		<!-- RIGHT SIDE PANEL -->                                     
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 mc">
-            
-			<div class="scrollToTop header1">
-                <img src="images/BLASTPAY_logo.svg" class="scrollimg" />
-            </div>
-            
-            
-	         <div ui-view></div>         
+            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 mc">
+	         <div id="content" ui-view></div>         
             </div>  
             <!-- RIGHT SIDE PANEL -->                     
     
-    		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">     
+    		<div class="col-lg-2 col-md-2 col-sm-1 col-xs-1">     
     		</div>
     
 	</div>
 	</div>
 	</div>
   </div>  
+
+
+<footer class="footer hide">
+<div class="footernav">test for jeyamurugan</div>
+</footer>
 
 
 
@@ -205,6 +196,7 @@ $(function(){
 		$('.btn-menu-on').css( '-moz-animation', 'shake 100ms 2 linear');			
 		$('.btn-menu-on').css( '-o-animation', 'shake 100ms 2 linear');			
 	},2000);
+	
 });
 </script>
 </html>
