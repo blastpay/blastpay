@@ -29,15 +29,16 @@
 <script src="js/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.18/webcomponents.min.js"></script>
 
-
 <script>
 $(document).ready(function(){
 	
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 10) {
-			$('.scrollToTop').fadeIn();
-		} else {
+			$('.scrollToTop').fadeIn();			
+		} 
+		else {
 			$('.scrollToTop').fadeOut();
+			$('.inner-navbar-brand').fadeIn();
 		}
 	});
 	
@@ -48,7 +49,6 @@ $(document).ready(function(){
 	});	
 });
 </script>
-
 </head>
 <body ng-app="MyApp">
 <link rel="import" href="https://www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html" />
@@ -71,10 +71,10 @@ $(document).ready(function(){
                   <div id="divMenuAnim"></div>
             </div>
             
-            <div class="navbar-brand scrollToTop"><img src="images/BLASTPAY_logo.svg" class="scrollimg" /></div>
+            <div id="navbar-brand" class="navbar-brand scrollToTop"><img src="images/BLASTPAY_logo.svg" class="scrollimg" /></div>
            
-    		<div class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-            <div class="login-nav">                           		
+    		<div class="nav navbar-nav navbar-right hidden-xs">
+            <div class="login-nav">                		
                 	<button class="btn-login">Log in</button>
                		<button class="btn-apply raised grey">Apply
                     <paper-ripple fit></paper-ripple></button>                           
@@ -89,17 +89,17 @@ $(document).ready(function(){
     	<div class="row">
                      
             <!-- LEFT SIDE PANEL -->     
-            <div class="col-lg-2 col-md-2 col-sm-1" id="o-wrapper">          
+            <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"  id="o-wrapper">          
             </div>
             <!-- LEFT SIDE PANEL -->     
         
     		<!-- RIGHT SIDE PANEL -->                                     
-            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 mc">
+            <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 mc">
 	         <div id="content" ui-view></div>         
             </div>  
             <!-- RIGHT SIDE PANEL -->                     
     
-    		<div class="col-lg-2 col-md-2 col-sm-1">     
+    		<div class="col-lg-2 col-md-1 col-sm-0 col-xs-0">     
     		</div>
     
 	</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){
     <li class="c-menu__item raised"><a class="c-menu__link" ui-sref="offer">Offer<paper-ripple fit></paper-ripple></a></li>
     <li class="c-menu__item raised"><a class="c-menu__link" ui-sref="usecases">Use Cases<paper-ripple fit></paper-ripple></a></li>
     <li class="c-menu__item raised"><a class="c-menu__link" ui-sref="contact">Contact<paper-ripple fit></paper-ripple></a></li>
-    <div class="visible-sm visible-xs">
+    <div class="visible-xs">
     <li class="c-menu__item raised"><a href="#login" class="c-menu__link">login<paper-ripple fit></paper-ripple></a></li>
     <li class="c-menu__item raised"><a href="#apply" class="c-menu__link">Apply<paper-ripple fit></paper-ripple></a></li>
     </div>
