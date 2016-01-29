@@ -88,7 +88,7 @@ body {  }
 .off-spacer { height:30px; width:100%; float:left; }
 .off-desc {  font-family:'Lato', sans-serif; font-size:15px; font-weight:400; color:#313131; line-height:1.4em; margin:0 0 50px 0; }
 
-.footernav { margin:auto; width:100%; text-align:center; }
+.footernav { margin:auto; margin-top:40px; padding:25px 0px; 0; width:100%; text-align:center; font-family:'Lato', sans-serif; font-size:12px; font-weight:400; color:#313131; line-height:1.5em; background:#f8f8f8; }
 
 .img-ucase { margin-bottom:20px; }
 .ucase-descnav { float:left; width:100%; margin:4% 0 90px 0; }
